@@ -1,0 +1,21 @@
+{
+  "packageId": "com.rahimoayeri.studytrack",
+  "host": "rahimoayeri96-dev.github.io",
+  "name": "همراه مطالعه",
+  "launcherName": "StudyTrack",
+  "display": "standalone",
+  "themeColor": "#4f8cff",
+  "navigationColor": "#4f8cff",
+  "backgroundColor": "#f3f4fc",
+  "startUrl": "/studyt/",
+  "iconUrl": "https://rahimoayeri96-dev.github.io/studyt/icon-512.png",
+  "maskableIconUrl": "https://rahimoayeri96-dev.github.io/studyt/icon-512.png",
+  "webManifestUrl": "https://rahimoayeri96-dev.github.io/studyt/manifest.webmanifest",
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "android"
+  }
+}
