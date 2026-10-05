@@ -1,0 +1,22 @@
+name: Build APK
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    - name: Build APK with pwa2apk
+      run: npx pwa2apk https://rahimoayeri96-dev.github.io/studyt/manifest.webmanifest --output ./app-release.apk
+    - name: Upload APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: StudyTrack-APK
+        path: ./app-release.apk
